@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primary: hsl(0, 73%, 41%);
+  --secondary: hsl(0, 0%, 0%);
+  --accent: hsl(51, 100%, 50%);
+
+  /* Fonts */
+  --font-pimary: "Montserrat", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  user-select: none;
+  cursor: pointer;
+  font-family: var(--font-pimary);
+}
+
+.propaganda-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.propaganda-slogan {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-shadow: 3px 3px 0 var(--accent), 6px 6px 0 rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  line-height: 1.1;
+}
+
+.grid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  gap: 1px;
+  z-index: 2;
+  position: relative;
+}
+
+.grid-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
