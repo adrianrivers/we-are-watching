@@ -1,6 +1,6 @@
 # Why?
 
-Why not?
+Why not? [Be watched here](https://adrianrivers.github.io/we-are-watching/).
 
 ## Getting Started
 
